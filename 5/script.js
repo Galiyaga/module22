@@ -30,7 +30,6 @@ socket.addEventListener('message', (message) => {
 
 
 function displayMessage(message, isClientMessage) {
-    console.log('displayMessage');
     const messageElement = document.createElement('div');
     messageElement.className = isClientMessage ? 'client-message message' : 'server-message message';
     messageElement.innerHTML = `<p>${message}</p>`;
